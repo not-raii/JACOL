@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jacol universitas</title>
+</head>
+<body>
+
+    <!-- !NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">
+          <div class="container">
+            <img src="Assets/image/Logo.png" class="navbar-brand" href="#" alt="log"></img>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Tutorial</a>
+                </li>
+                <li class="nav-item dropdown mx-2">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Course
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown mx-2">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Learning
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <!-- <div class="sign"> -->
+                  <li class="nav-item mx-2">
+                      <a class="nav-link" href="">About us</a>
+                  </li>
+                  <li class="nav-item sign">
+                      <a class="nav-link" href="{{url('sign')}}">Sign in</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link sign-up btn" href="{{url('signup')}}">Sign up</a>
+                  </li>
+                <!-- </div> -->
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </header>
+    <!-- !AKHIR NAVBAR -->
+    
+
+    <!-- !JUMBOTRON -->
+    <main>
+      <div id="jumbotron">
+          <div class="bg-jumbtron my-5">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-4">
+                          <h1 class="kursus">DAFTAR</h1>
+                          <div class="line-kuning">KURSUS</div>
+                      </div>
+                      <div class="col-4">
+                          <h2 class="kursus-pilihan">Pilih 1 dari 1,000+ kursus pilihan nasional maupun internasional</h2>
+                          <p class="play">Kamu bisa memulai dengan menekan tombol di bawah</p>
+                          <button class="btn px-4 py-2 btn-play"><i class="bi bi-play-fill me-2"></i><span class="tutor">Mulai Tutorial</span></button>
+                      </div>
+                      <div class="col-4">
+                          <img src="/Assets/image/jumbotron-1.png" class="img-jumbotron img-fluid" alt="hero">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- !AKHIR JUMBOTRON -->
+
+    <!-- !SEARCH -->
+    <div class="section-filter">
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <div class="input-group search-1 ">
+                      <button class="btn btn-search-1 border-0"><i class="bi bi-search"></i></button>
+                      <input type="text" class="form-control border-0" >
+                  </div>    
+              </div>
+              <div class="col-2 search">
+                  <div class="input-group">
+                      <button class="btn dropdown-toggle select" type="button" data-bs-toggle="dropdown" aria-expanded="false">Level</button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Junior</a></li>
+                        <li><a class="dropdown-item" href="#">Senior</a></li>
+                      </ul>
+                      <!-- <input type="text" class="form-control" aria-label="Text input with dropdown button"> -->
+                  </div>
+              </div>
+              <div class="col-2 search">
+                  <div class="input-group">
+                      <button class="btn dropdown-toggle select" type="button" data-bs-toggle="dropdown" aria-expanded="false">Pelajaran</button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Kursus</a></li>
+                        <li><a class="dropdown-item" href="#">Modul</a></li>
+                      </ul>
+                      <!-- <input type="text" class="form-control" aria-label="Text input with dropdown button"> -->
+                  </div>
+              </div>
+              <div class="col-2">
+                  <button class="btn btn-primary filter">Filter</button>
+              </div>
+              <h1 class="text-center belajar mt-5">Belajar mewarnai</h1>
+              <h5 class="relate text-center py-2">
+                <span>Terkait pencarian:</span>
+                <span  class="hasil">Mewarnai, Belajar, Online, Menggambar, Menulis
+                </span>
+              </h5>
+              <div class="row justify-content-center shadow-sm tags mb-5 p-3">
+                <div class="col-1 active">Mewarnai</div>
+                <div class="col-1">Menggambar</div>
+                <div class="col-1">Menghitung</div>
+                <div class="col-1">Membaca</div>
+                <div class="col-1">Menulis</div>
+                <div class="col-1">Komputer</div>
+                <div class="col-1">Matematika</div>
+                <div class="col-1">Biologi</div>
+                <div class="col-1">Sejarah</div>
+                <div class="col-1">Agama</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- !AKHIR SEARCH -->
+
+    <!-- !SECTION KURSUS -->
+    <div class="section-kursus mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="card border-0">
+              <img src="Assets/image/ipa.png" class="card-img-top" alt="course ipa">
+              <label for="label" class="label">Modul</label>
+              <div class="card-body">
+                <h5 class="title">IPA</h5>
+                <h5 class="category">
+                  <img src="Assets/image/junior.png" alt="junior">
+                  Junior
+                </h5>
+                <p class="card-text">Belajar membuat gambar 2d sampai mewarnai gambar tersebut </p>
+                <div class="d-flex text-center justify-content-center mb-3">
+                  <a href="#" class="btn btn-rules">
+                  <i class="bi bi-star-fill px-1 py-2"> 5</i>
+                  </a>
+                  <a href="#" class="btn btn-rules">
+                  <i class="bi bi-person-fill px-1 py-2"> 20</i>
+                  </a>
+                  <a href="#" class="btn btn-rules">
+                  Umur 6+
+                  </a>
+                </div>
+                <div class="d-grid">
+                  <a href="#" class="join btn btn-primary">Bergabung</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-2 d-flex align-items-center">
+                <span class="show">Showing</span>
+              </div>
+              <div class="col-md-3">
+                <select class="form-select" aria-label="Default select example">
+                  <option value="1">1 Data</option>
+                  <option value="3">3 Data</option>
+                  <option selected>6 Data</option>
+                  <option value="9">9 Data</option>
+                  <option value="12">12 Data</option>
+                </select>
+              </div>
+              <div class="col-md-3 d-flex align-items-center">
+                <span>From 6 data</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 text-end paginate">
+            <button disabled class="btn">
+              <i class="bi bi-caret-left-fill"></i>
+            </button>
+            <button class="btn active-1">1</button>
+            <button class="btn">2</button>
+            <button class="btn">...</button>
+            <button class="btn">7</button>
+            <button class="btn active-1">
+              <i class="bi bi-caret-right-fill"></i>
+            </button>
+            <button class="btn active-2">
+              <i class="bi bi-chevron-double-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !AKHIR SECTION KURSUS  -->
+
+    <!-- !  SECTION PUPOLER KURSUS -->
+    <div class="section-kursus mb-5">
+      <div class="container">
+        <div class="row">
+          <h4 class="tag">KURSUS</h4>
+          <div class="d-flex">
+            <h4 class="title-kursus">
+              Kursus Yang Populer
+            </h4>
+            <button class="btn ms-auto btn-all-kursus px-4">Semua Kursus</button>
+          </div>
+          <div class="row mt-4">
+            <div class="col-4">
+              <div class="card border-0">
+                <img src="Assets/image/ipa.png" class="card-img-top" alt="course ipa">
+                <label for="label" class="label">Modul</label>
+                <div class="card-body">
+                  <h5 class="title">IPA</h5>
+                  <h5 class="category">
+                    <img src="Assets/image/junior.png" alt="junior">
+                    Junior
+                  </h5>
+                  <p class="card-text">Belajar membuat gambar 2d sampai mewarnai gambar tersebut </p>
+                  <div class="d-flex text-center justify-content-center mb-3">
+                    <a href="#" class="btn btn-rules">
+                    <i class="bi bi-star-fill px-1 py-2"> 5</i>
+                    </a>
+                    <a href="#" class="btn btn-rules">
+                    <i class="bi bi-person-fill px-1 py-2"> 20</i>
+                    </a>
+                    <a href="#" class="btn btn-rules">
+                    Umur 6+
+                    </a>
+                  </div>
+                  <div class="d-grid">
+                    <a href="#" class="join btn btn-primary">Bergabung</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !  AKHIR PUPOLER KURSUS -->
+
+    <!-- !SECTION TESTIMONIAL -->
+    <div class="section-testimonional my-5">
+      <div class="container">
+        <div class="row text-center py-5">
+          <h4 class="text-uppercase text-light">
+            penilaian user
+          </h4>
+          <h1 class="text-light pb-5">Cerita Anak Tentang Kursus Kami</h1>
+          <div class="col-6">
+            <div class="card mb-3 text-start">
+              <div class="row g-0 mt-3">
+                <div class="col-md-4">
+                  <img src="Assets/image/testi-1.jpg" class="img-fluid rounded-start p-4" alt="testi-1  ">
+                </div>
+                <div class="col-md-8 pt-3">
+                  <div class="card-body">
+                    <span class="starts">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <h5 class="card-title my-2">Kursus Matematika</h5>
+                    <p class="card-text-testi">Dengan mengikuti kursus matematika ini nilai ku dikelas jadi naik drastis, tidak sia-sia aku mengikuti kursus ini.</p>
+                    <h5 class="nama mt-3">Jacob Ujang Alexander</h5>
+                    <p class="kelas">Siswa Kelas 6 SD</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card mb-3 text-start">
+              <div class="row g-0 mt-3">
+                <div class="col-md-4">
+                  <img src="Assets/image/testi-2.jpg" class="img-fluid rounded-start p-4" alt="testi-1  ">
+                </div>
+                <div class="col-md-8 pt-3">
+                  <div class="card-body">
+                    <span class="starts">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <h5 class="card-title my-2">Kursus Sejarah</h5>
+                    <p class="card-text-testi">Dengan mengikuti kursus matematika ini nilai ku dikelas jadi naik drastis, tidak sia-sia aku mengikuti kursus ini.</p>
+                    <h5 class="nama mt-3">Miechelle Siti</h5>
+                    <p class="kelas">Siswa Kelas 6 SD</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !AKHIR SECTION TESTIMONIAL -->
+    
+    <!-- !SECTION HERO -->  
+    <div class="section-hero mt-5 p-md-5">
+      <img src="Assets/image/ranting-2.png" alt="ranting-2" class="ranting-2">
+      <div class="container img-bg-hero m-md-5">
+        <div class="row g-0">
+          <div class="col-6">
+            <img src="Assets/image/hero.png" class="img-fluid img-hero" alt="hero">
+          </div>
+          <div class="col-6 mt-5">
+            <div class="detail-hero">
+              <h1>Belajar akan terasa senang dengan ilustrasi</h1>
+              <p>Memulai pembelajaran seru dibantu bimbingan orang tua terhadap tumbuh kembang anak</p>
+            </div>
+            <a href="#" class="btn btn-hero">Daftar Sekarang</a>
+          </div>
+        </div>
+      </div>
+      <img src="Assets/image/ranting-3.png" alt="ranting-3" class="img-fluid ranting-3">
+    </div>
+    <!-- !AKHIR SECTION HERO -->
+
+      <!-- !SECTION SPONSOR -->
+    <section>
+      <div class="container-fluid">
+        <div class="row section-sponsors">
+          <div class="col-md-2">
+            <img src="Assets/image/logos_udemy.png" alt="logo_udemy" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+            <img src="Assets/image/ibm.png" alt="logo_ibm" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+            <img src="Assets/image/microsoft.png" alt="logo_microsoft" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+            <img src="Assets/image/meta.png" alt="logo_meta" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+            <img src="Assets/image/coursera.png" alt="logo_course" class="img-fluid">
+          </div>
+          <div class="col-md-2">
+            <img src="Assets/image/logo-google.png" alt="logo_google" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !AKHIR SECTION SPONSOR -->
+  </main>
+
+    <!-- !FOOTER -->
+    <footer>
+      <div class="container pt-5 pb-3">
+        <div class="row">
+          <div class="col-md-5 mt-5 logo-footer">
+            <img src="Assets/image/jc-putih.png" alt="logo_jc_putih" class="img-fluid">
+              <b>JACOL</b>
+            <p>Website pilihan terbaik untuk membantu anak dalam proses belajar</p>
+          </div>
+          <div class="col-md-2 mt-5">
+            <b>Layanan Kami</b>
+            <ul>
+              <li>
+                Tentang kami
+              </li>
+              <li>
+                Privacy & Policy
+              </li>
+              <li>
+                Kontak Kami
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 mt-5">
+            <b>Produk Kami</b>
+            <ul>
+              <li>Edukasi Anak</li>
+              <li>Mengajar</li>
+              <li>Kuis Online</li>
+            </ul>
+          </div>
+          <div class="col-md-2 mt-5">
+            <b>Explore</b>
+            <ul>
+              <li>Permainan</li>
+              <li>Cek Badge</li>
+              <li>Kursus</li>
+            </ul>
+          </div>
+          <div class="mt-5 col-md-1">
+            <img src="Assets/image/img-footer.png" class="img-footer" alt="img-footer">
+          </div>
+        </div>
+        <div class="row">
+          <p class="copyright">Copyright © 2023 JACOL ALL RIGHT RESERVED</p>
+        </div>
+      </div>
+      
+    </footer>
+    <!-- !AKHIR FOOTER -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
